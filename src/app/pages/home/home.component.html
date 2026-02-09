@@ -1,0 +1,53 @@
+<div class="home-wrapper">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1531415086387-ec88e126900d?w=1200&h=600&fit=crop" alt="Cricket" class="hero-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>🏏 Welcome to Kara Cricket League</h1>
+      <p>The Ultimate Cricket Auction Platform</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" routerLink="/player-registration">Register Now</button>
+        <button class="btn btn-secondary" routerLink="/players">Explore Players</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Why Join Kara Cricket?</h2>
+      <div class="features-grid">
+        <div class="feature-card" *ngFor="let feature of features">
+          <div class="feature-icon">{{ feature.icon }}</div>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="stats-grid">
+        <div class="stat-card" *ngFor="let stat of stats">
+          <h3>{{ stat.number }}</h3>
+          <p>{{ stat.label }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Ready to Showcase Your Talent?</h2>
+      <p>Join thousands of cricket players competing in India's premium auction league</p>
+      <button class="btn btn-primary" routerLink="/player-registration">Get Started</button>
+    </div>
+  </section>
+</div>

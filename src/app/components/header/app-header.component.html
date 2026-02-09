@@ -1,18 +1,18 @@
 <header class="navbar">
   <div class="navbar-container">
     <!-- Logo -->
-    <div class="logo">
-      <img src="assets/kara-logo.png" alt="Kara Logo" class="logo-img">
+    <div class="logo" routerLink="/" class="logo-link">
+      <img src="assets/images/kara_logo.jpeg" alt="Kara Logo" class="logo-img">
       <span class="logo-text">🏏 Kara Cricket</span>
     </div>
 
     <!-- Navigation Links -->
     <nav class="nav-links">
-      <a routerLink="/" class="nav-link">Home</a>
-      <a routerLink="/players" class="nav-link">Players</a>
-      <a routerLink="/teams" class="nav-link">Teams</a>
-      <a routerLink="/bid-dashboard" class="nav-link">Auctions</a>
-      <a routerLink="/team-owner-dashboard" class="nav-link">Dashboard</a>
+      <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="/players" class="nav-link" routerLinkActive="active">Players</a>
+      <a routerLink="/teams" class="nav-link" routerLinkActive="active">Teams</a>
+      <a routerLink="/bid-dashboard" class="nav-link" routerLinkActive="active">Auctions</a>
+      <a routerLink="/team-owner-dashboard" class="nav-link" routerLinkActive="active">Dashboard</a>
       <a routerLink="/login" class="nav-link login-link">Login</a>
     </nav>
   </div>

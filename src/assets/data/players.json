@@ -1,0 +1,88 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Virat Sharma",
+      "role": "Batsman",
+      "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=400&fit=crop",
+      "basePrice": 50,
+      "experience": 8,
+      "stats": "⭐ Avg: 45.2",
+      "email": "virat@cricket.com",
+      "phone": "9876543210",
+      "battingStyle": "Right-Handed",
+      "bowlingStyle": "N/A",
+      "jerseyNumber": 7
+    },
+    {
+      "id": 2,
+      "name": "Jasprit Kumar",
+      "role": "Bowler",
+      "image": "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=400&h=400&fit=crop",
+      "basePrice": 40,
+      "experience": 6,
+      "stats": "🎯 Avg: 24.5",
+      "email": "jasprit@cricket.com",
+      "phone": "9876543211",
+      "battingStyle": "Right-Handed",
+      "bowlingStyle": "Right Arm Fast",
+      "jerseyNumber": 33
+    },
+    {
+      "id": 3,
+      "name": "Rohit Singh",
+      "role": "All-Rounder",
+      "image": "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=400&fit=crop",
+      "basePrice": 60,
+      "experience": 10,
+      "stats": "⭐ Avg: 35.8",
+      "email": "rohit@cricket.com",
+      "phone": "9876543212",
+      "battingStyle": "Right-Handed",
+      "bowlingStyle": "Right Arm Spin",
+      "jerseyNumber": 45
+    },
+    {
+      "id": 4,
+      "name": "Surya Patel",
+      "role": "Wicket-Keeper",
+      "image": "https://images.unsplash.com/photo-1521149635033-18a6377d0406?w=400&h=400&fit=crop",
+      "basePrice": 35,
+      "experience": 5,
+      "stats": "🧤 Avg: 38.2",
+      "email": "surya@cricket.com",
+      "phone": "9876543213",
+      "battingStyle": "Left-Handed",
+      "bowlingStyle": "N/A",
+      "jerseyNumber": 1
+    },
+    {
+      "id": 5,
+      "name": "Hardik Rao",
+      "role": "All-Rounder",
+      "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=400&fit=crop",
+      "basePrice": 55,
+      "experience": 7,
+      "stats": "⭐ Avg: 40.1",
+      "email": "hardik@cricket.com",
+      "phone": "9876543214",
+      "battingStyle": "Right-Handed",
+      "bowlingStyle": "Right Arm Fast",
+      "jerseyNumber": 23
+    },
+    {
+      "id": 6,
+      "name": "Yuzvendra Gupta",
+      "role": "Bowler",
+      "image": "https://images.unsplash.com/photo-1527483377697-8795b1a55a45?w=400&h=400&fit=crop",
+      "basePrice": 45,
+      "experience": 9,
+      "stats": "🎯 Avg: 22.3",
+      "email": "yuzvendra@cricket.com",
+      "phone": "9876543215",
+      "battingStyle": "Right-Handed",
+      "bowlingStyle": "Left Arm Spin",
+      "jerseyNumber": 17
+    }
+  ]
+}

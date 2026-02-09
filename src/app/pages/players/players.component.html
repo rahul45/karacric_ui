@@ -1,0 +1,57 @@
+<div class="players-wrapper">
+  <!-- Header -->
+  <div class="players-header">
+    <h1>🏏 Cricket Players</h1>
+    <p>Browse and Bid on Premium Cricket Talent</p>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-section">
+    <div class="container">
+      <div class="filter-group">
+        <input 
+          type="text" 
+          placeholder="🔍 Search players..." 
+          [(ngModel)]="searchTerm"
+          (input)="onSearchChange()"
+          class="search-input"
+        />
+        <select [(ngModel)]="selectedRole" (change)="onRoleChange()" class="role-filter">
+          <option value="">All Roles</option>
+          <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+        </select>
+        <button class="btn-export" (click)="exportPlayers()">📥 Export Data</button>
+      </div>
+      <div class="filter-info">
+        Found {{ players.length }} player(s)
+      </div>
+    </div>
+  </div>
+
+  <!-- Players Grid -->
+  <div class="container players-grid">
+    <div class="player-card" *ngFor="let player of players">
+      <div class="player-image">
+        <img [src]="player.image" [alt]="player.name" (error)="onImageError($event)">
+        <div class="player-role">{{ player.role }}</div>
+        <div class="player-delete" (click)="deletePlayer(player.id)">❌</div>
+      </div>
+      <div class="player-info">
+        <h3>{{ player.name }}</h3>
+        <p class="experience">📅 {{ player.experience }} years</p>
+        <p class="stats">{{ player.stats }}</p>
+        <p class="location">📍 {{ player.city }}, {{ player.state }}</p>
+        <div class="price-section">
+          <span class="label">Base Price:</span>
+          <span class="price">₹{{ player.basePrice }}L</span>
+        </div>
+        <button class="btn-bid">🔨 Bid Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Results -->
+  <div class="no-results" *ngIf="players.length === 0">
+    <p>🔍 No players found matching your criteria</p>
+  </div>
+</div>

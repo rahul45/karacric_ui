@@ -1,7 +1,7 @@
 <div class="registration-wrapper">
   <!-- Hero Section -->
   <div class="hero-section">
-    <img src="assets/cricket-hero.jpg" alt="Cricket" class="hero-image">
+    <img src="https://images.unsplash.com/photo-1540350043866-fb5c2b008d89?w=1200&h=400&fit=crop" alt="Cricket" class="hero-image">
     <div class="hero-content">
       <h1>🏏 Join Kara Cricket League</h1>
       <p>Register as a Professional Cricket Player</p>
@@ -9,6 +9,16 @@
   </div>
 
   <div class="registration-container">
+    <!-- Success Message -->
+    <div class="alert alert-success" *ngIf="successMessage">
+      {{ successMessage }}
+    </div>
+
+    <!-- Error Message -->
+    <div class="alert alert-error" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+
     <div class="registration-card">
       <div class="card-header">
         <h2>Player Registration Form</h2>
@@ -63,10 +73,10 @@
             <label for="role">Role *</label>
             <select id="role" formControlName="role">
               <option value="">Select Role</option>
-              <option value="batsman">⚾ Batsman</option>
-              <option value="bowler">🎯 Bowler</option>
-              <option value="all-rounder">⭐ All-Rounder</option>
-              <option value="wicket-keeper">🧤 Wicket-Keeper</option>
+              <option value="Batsman">⚾ Batsman</option>
+              <option value="Bowler">🎯 Bowler</option>
+              <option value="All-Rounder">⭐ All-Rounder</option>
+              <option value="Wicket-Keeper">🧤 Wicket-Keeper</option>
             </select>
             <span class="error" *ngIf="submitted && f['role'].errors?.['required']">Role is required</span>
           </div>
@@ -75,8 +85,8 @@
             <label for="battingStyle">Batting Style *</label>
             <select id="battingStyle" formControlName="battingStyle">
               <option value="">Select Batting Style</option>
-              <option value="right-handed">Right-Handed</option>
-              <option value="left-handed">Left-Handed</option>
+              <option value="Right-Handed">Right-Handed</option>
+              <option value="Left-Handed">Left-Handed</option>
             </select>
             <span class="error" *ngIf="submitted && f['battingStyle'].errors?.['required']">Batting style is required</span>
           </div>
@@ -85,12 +95,12 @@
             <label for="bowlingStyle">Bowling Style</label>
             <select id="bowlingStyle" formControlName="bowlingStyle">
               <option value="">Select Bowling Style</option>
-              <option value="right-arm-fast">Right Arm Fast</option>
-              <option value="right-arm-medium">Right Arm Medium</option>
-              <option value="right-arm-spin">Right Arm Spin</option>
-              <option value="left-arm-fast">Left Arm Fast</option>
-              <option value="left-arm-spin">Left Arm Spin</option>
-              <option value="n/a">N/A</option>
+              <option value="Right Arm Fast">Right Arm Fast</option>
+              <option value="Right Arm Medium">Right Arm Medium</option>
+              <option value="Right Arm Spin">Right Arm Spin</option>
+              <option value="Left Arm Fast">Left Arm Fast</option>
+              <option value="Left Arm Spin">Left Arm Spin</option>
+              <option value="N/A">N/A</option>
             </select>
           </div>
 
@@ -102,7 +112,7 @@
 
           <div class="form-group">
             <label for="jerseyNumber">Jersey Number *</label>
-            <input type="number" id="jerseyNumber" formControlName="jerseyNumber" placeholder="Enter jersey number" min="1" max="99" />
+            <input type="number" id="jerseyNumber" formControlName="jerseyNumber" placeholder="Enter jersey number (1-99)" min="1" max="99" />
             <span class="error" *ngIf="submitted && f['jerseyNumber'].errors?.['required']">Jersey number is required</span>
           </div>
         </fieldset>
