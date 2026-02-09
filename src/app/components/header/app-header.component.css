@@ -1,16 +1,18 @@
 .navbar {
-  background-color: #1a1a2e;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -23,6 +25,7 @@
 .logo-img {
   height: 40px;
   width: 40px;
+  border-radius: 50%;
 }
 
 .logo-text {
@@ -34,28 +37,28 @@
 .nav-links {
   display: flex;
   gap: 2rem;
-  align-items: center;
+  list-style: none;
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 .nav-link:hover {
-  color: #ff6b6b;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffd700;
 }
 
 .login-link {
-  background-color: #ff6b6b;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  color: #fff;
+  background-color: #ffd700;
+  color: #1a472a;
 }
 
 .login-link:hover {
-  background-color: #ff5252;
-  color: #fff;
+  background-color: #ffed4e;
 }
